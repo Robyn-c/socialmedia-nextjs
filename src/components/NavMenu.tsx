@@ -10,11 +10,24 @@ import React from 'react'
 export default function NavMenu() {
   return (
     <nav className={styles.nav}>
-      <Image
-        src={logo}
-        width={150}
-        alt="Nook logo"
-      />
+      <Link href={'/'}>
+        <Image
+          src={logo}
+          width={200}
+          alt="Nook logo"
+          />
+      </Link>
+      <ul className={styles.links}>
+        <li>
+          <Link href={'/search'}>Search</Link>
+        </li>
+        <li>
+          <Link href={'/explore'}>Explore</Link>
+        </li>
+        <li>
+          <Link href={'/account'}>Account</Link>
+        </li>
+      </ul>
     </nav>
   )
 }
