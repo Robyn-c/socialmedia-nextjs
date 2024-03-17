@@ -4,6 +4,7 @@ import styles from "./NavMenu.module.css"
 import logo from "@/assets/logo.png"
 
 import React from 'react'
+import SidebarRoutes from "../SidebarRoutes/SidebarRoutes";
 
 
 
@@ -13,21 +14,11 @@ export default function NavMenu() {
       <Link href={'/'}>
         <Image
           src={logo}
-          width={200}
+          width={125}
           alt="Nook logo"
           />
       </Link>
-      <ul className={styles.links}>
-        <li>
-          <Link href={'/search'}>Search</Link>
-        </li>
-        <li>
-          <Link href={'/explore'}>Explore</Link>
-        </li>
-        <li>
-          <Link href={'/account'}>Account</Link>
-        </li>
-      </ul>
+      <SidebarRoutes />
     </nav>
   )
 }
