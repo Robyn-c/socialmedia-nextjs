@@ -1,0 +1,26 @@
+.list_item {
+  list-style: none;
+  transition: all 0.1s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.list_item:hover {
+  color: var(--accent);
+}
+
+
+.list_link {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  transition: all 0.1s ease-in-out;
+}
+
+.list_link:hover, .list_link_active {
+  color: var(--accent);
+}

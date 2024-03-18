@@ -1,7 +1,9 @@
+"use client"
+
 import { Compass, Home, Search, User } from 'lucide-react'
 import React from 'react'
-import styles from "./SidebarRoutes.module.css"
-import SidebarItem from '../SidebarItem/SidebarItem';
+import styles from "./NavLinks.module.css"
+import NavItem from '../NavItem/NavItem';
 const guestRoutes = [
     {
         icon: Home,
@@ -25,14 +27,14 @@ const guestRoutes = [
     }
 ]
 
-function SidebarRoutes() {
+function NavLinks() {
 
     const routes = guestRoutes;
 
   return (
-    <ul className={styles.links}>
+    <ul className={styles.list}>
         {routes.map((route) => (
-          <SidebarItem 
+          <NavItem 
               key={route.href}
               icon={route.icon}
               label={route.label}
@@ -53,4 +55,4 @@ function SidebarRoutes() {
   )
 }
 
-export default SidebarRoutes
+export default NavLinks

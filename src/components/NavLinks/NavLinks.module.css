@@ -1,5 +1,6 @@
-.links {
+.list {
+    width: 10em;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    gap: 2em;
 }
