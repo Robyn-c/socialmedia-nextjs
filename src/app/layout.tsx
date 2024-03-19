@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import NavMenu from "@/components/NavMenu/NavMenu";
 
 import "./globals.css";
+import AuthProvider from "./AuthProvider";
+import { SignInButton } from "@/components/AccountButtons/AccountButtons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,11 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <AuthProvider>
     <html lang="en">
       <body className={inter.className}>
         <NavMenu />
         {children}
       </body>
     </html>
+    </AuthProvider>
   );
 }
