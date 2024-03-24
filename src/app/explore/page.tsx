@@ -18,7 +18,6 @@ export async function generateStaticParams() {
 }
 
 export default async function ExplorePage() {
-
   const posts : Post[] = await fetch('http://localhost:3000/api/content').then(
     (res) => res.json()
   );

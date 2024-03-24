@@ -1,0 +1,31 @@
+
+
+.parent {
+  min-height: 1000px;
+  display: grid;
+  grid-template-areas: 
+    "a a b"
+    "c c b"
+    "d d d";    
+}
+
+
+.fuck { 
+  background-color: red;
+  grid-area: a;
+}
+
+.dick {
+  background-color: aquamarine;
+  grid-area: b;
+}
+
+.imafaggot {
+  background-color: blueviolet;
+  grid-area: c;
+}
+
+.lmao {
+  background-color: yellow;
+  grid-area: d;
+}

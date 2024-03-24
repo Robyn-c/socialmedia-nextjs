@@ -6,6 +6,7 @@ import NavMenu from "@/components/NavMenu/NavMenu";
 import "./globals.css";
 import AuthProvider from "./AuthProvider";
 import { SignInButton } from "@/components/AccountButtons/AccountButtons";
+import { getServerSession } from "next-auth";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <AuthProvider>
     <html lang="en">

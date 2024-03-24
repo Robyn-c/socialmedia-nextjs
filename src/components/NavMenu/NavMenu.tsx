@@ -11,7 +11,7 @@ import { SignInButton } from "@/components/AccountButtons/AccountButtons";
 
 
 export default function NavMenu() {
-  return (
+  return ( 
       <nav className={styles.nav}>
         <Link href={'/'}>
           <Image 

@@ -11,3 +11,25 @@
 .signIn:hover {
   color: var(--accent);
 }
+
+.link { 
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75em
+}
+
+.image {
+  border-radius: 999px;
+  border: 2px solid var(--text);
+}
+
+.signOut {
+  cursor: pointer;
+  color: var(--text);
+  font-size: 1.2em;
+}
+
+.signOut:hover {
+  color: var(--accent);
+}

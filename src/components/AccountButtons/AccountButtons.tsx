@@ -16,14 +16,17 @@ export function SignInButton() {
 
   if (status === 'authenticated') {
     return (
-      <Link href={`/dashboard`}>
-        <Image
-          src={session.user?.image ?? userIcon}
-          width={32}
-          height={32}
-          alt="Your Name"
-        />
-      </Link>
+      <div className={styles.link}>
+        <Link href={`/dashboard`}>
+          <Image className={styles.image}
+            src={session.user?.image ?? userIcon}
+            width={32}
+            height={32}
+            alt="Your Name"
+          />
+        </Link>
+        <SignOutButton></SignOutButton>
+      </div>
     );
   }
 
@@ -36,5 +39,5 @@ export function SignInButton() {
 }
 
 export function SignOutButton() {
-  return <button onClick={() => signOut()}>Sign out</button>;
+  return <button className={styles.signOut} onClick={() => signOut()}>Sign out</button>;
 }

@@ -41,16 +41,6 @@ function NavLinks() {
               href={route.href}
             />
         ))}
-{/*     <li>
-      <Search size={20} color="#ddd4cc" />
-      <Link href={'/search'}>Search</Link>
-    </li>
-    <li>
-      <Link href={'/explore'}>Explore</Link>
-    </li>
-    <li>
-      <Link href={'/account'}>Account</Link>
-    </li> */}
   </ul>
   )
 }
